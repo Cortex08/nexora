@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nexora — Registro de marca sem dor de cabeça</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eaf0ff;--bg2:#f7f9ff;--surface:#fff;--ink:#0b1740;--muted:#4a5a85;--line:#d3ddf5;
+  --brand:#2447e0;--brand2:#0f2a9c;--sky:#6fb4ff;--soft:#dfe8ff;--ok:#0a7a4b;
+  --night1:#040a24;--night2:#0b1c68;--night3:#2447e0;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#060d2b;--bg2:#091338;--surface:#0f1c4d;--ink:#eaf0ff;--muted:#a5b4dc;--line:#22336f;
+  --brand:#6f93ff;--brand2:#9db5ff;--soft:#142561;--ok:#4cd694;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#060d2b;--bg2:#091338;--surface:#0f1c4d;--ink:#eaf0ff;--muted:#a5b4dc;--line:#22336f;--brand:#6f93ff;--brand2:#9db5ff;--soft:#142561;--ok:#4cd694;color-scheme:dark}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,var(--bg2),var(--bg));color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.025em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.glass{background:linear-gradient(135deg,rgba(255,255,255,.22),rgba(255,255,255,.07));border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);box-shadow:0 18px 50px rgba(2,8,40,.35),inset 0 1px 0 rgba(255,255,255,.35);color:#fff}
+.dark{background:radial-gradient(900px 500px at 85% -10%,#3a63ff 0%,transparent 60%),radial-gradient(700px 500px at 0% 100%,#1a8cff55 0%,transparent 60%),linear-gradient(160deg,var(--night1),var(--night2) 60%,#1a3bc4);color:#fff;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:float 14s ease-in-out infinite;z-index:1}
+.o1{width:380px;height:380px;background:#4b7bff;top:-80px;right:8%}
+.o2{width:300px;height:300px;background:#35c1ff;bottom:-60px;left:-40px;animation-delay:-6s}
+@keyframes float{50%{transform:translate(30px,-26px) scale(1.08)}}
+header{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:rgba(6,14,50,.55);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.14);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.logo{font:700 1.55rem "Bricolage Grotesque",sans-serif;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,#7fb2ff,#2447e0);display:grid;place-items:center;box-shadow:0 4px 14px rgba(70,120,255,.6)}
+.logo i::after{content:"";width:12px;height:12px;border:3px solid #fff;border-left-color:transparent;border-radius:50%;transform:rotate(45deg)}
+nav{display:flex;gap:28px;align-items:center;font-weight:500}
+nav a{text-decoration:none;color:#c9d6ff}nav a:hover{color:#fff}
+.btn{display:inline-block;background:linear-gradient(135deg,#4a78ff,#2447e0);color:#fff;font-weight:600;padding:13px 24px;border-radius:12px;text-decoration:none;border:0;cursor:pointer;font:600 1rem Figtree,sans-serif;box-shadow:0 8px 24px rgba(36,71,224,.45),inset 0 1px 0 rgba(255,255,255,.3);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(36,71,224,.6),inset 0 1px 0 rgba(255,255,255,.3);color:#fff}
+.btn.ghost{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35);box-shadow:none;backdrop-filter:blur(8px)}
+.hero{padding:72px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,6vw,4.4rem);font-weight:700;animation:in .9s both}
+.hero .lead{font-size:1.2rem;color:#c9d6ff;max-width:46ch;margin:22px 0 30px;animation:in .9s .12s both}
+.hero .row{display:flex;gap:14px;flex-wrap:wrap;animation:in .9s .22s both}
+@keyframes in{from{opacity:0;transform:translateY(22px)}}
+.formwrap{position:relative;animation:in .9s .3s both}
+.check{border-radius:22px;padding:28px}
+.check h2{font-size:1.4rem;margin-bottom:4px}
+.check p{margin:0 0 8px;color:#d5e0ff;font-size:.95rem}
+label{font-weight:600;font-size:.88rem;display:block;margin:14px 0 6px}
+input,select{width:100%;padding:13px 14px;border-radius:11px;border:1px solid rgba(255,255,255,.35);background:rgba(4,10,40,.45);color:#fff;font:inherit}
+input::placeholder{color:#a9b9ea}
+select option{color:#0b1740}
+.check .btn{width:100%;margin-top:20px}
+#res{margin-top:16px;padding:13px 14px;border-radius:11px;background:rgba(255,255,255,.14);font-size:.95rem;display:none}
+.cert{position:absolute;left:-34px;bottom:-34px;border-radius:16px;padding:14px 18px;display:flex;gap:12px;align-items:center;font-size:.85rem;animation:float 9s ease-in-out infinite}
+.cert b{display:block;font-size:.95rem}
+.cert svg{flex:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:56px 0 72px}
+.stat{border-radius:18px;padding:22px 24px}
+.stat b{font:700 2.6rem "Bricolage Grotesque",sans-serif;display:block;line-height:1}
+.stat span{color:#d5e0ff;font-size:.95rem}
+section{padding:84px 0;position:relative}
+h2.t{font-size:clamp(1.9rem,4vw,2.7rem);margin-bottom:12px}
+.sub{color:var(--muted);max-width:56ch;margin:0 0 44px}
+.soft{background:radial-gradient(600px 300px at 90% 0%,rgba(80,130,255,.22),transparent 70%),radial-gradient(500px 300px at 0% 100%,rgba(90,200,255,.2),transparent 70%)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.steps li{counter-increment:s;background:rgba(255,255,255,.55);border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:18px;padding:22px;box-shadow:0 10px 30px rgba(36,71,224,.12)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .steps li{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.15)}}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#4a78ff,#2447e0);color:#fff;display:grid;place-items:center;font:700 1rem "Bricolage Grotesque",sans-serif;margin-bottom:14px}
+.steps h3{font-size:1.15rem;margin-bottom:6px}
+.steps p{margin:0;color:var(--muted);font-size:.95rem}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.plan{border-radius:22px;padding:30px;display:flex;flex-direction:column}
+.plan.hot{background:linear-gradient(160deg,rgba(255,255,255,.36),rgba(120,160,255,.18));border-color:rgba(255,255,255,.6);transform:translateY(-10px)}
+.plan h3{font-size:1.3rem}
+.tag{font-size:.78rem;font-weight:600;background:#fff;color:#1b3fd8;border-radius:99px;padding:3px 10px;margin-left:8px;vertical-align:middle}
+.price{font:700 2.5rem "Bricolage Grotesque",sans-serif;margin:12px 0 0}
+.price small{font:400 .9rem Figtree,sans-serif;color:#cdd9ff}
+.plan ul{padding-left:20px;margin:18px 0 26px;color:#e1e9ff;flex:1}
+.plan li{margin-bottom:7px}
+.plan .btn{text-align:center}
+.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 14px 40px rgba(36,71,224,.1)}
+.quote p{margin:0 0 18px;font-size:1.1rem}
+.quote cite{font-style:normal;color:var(--muted);font-size:.92rem}
+.quote cite b{color:var(--ink);display:block}
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{font-weight:600;cursor:pointer;font-size:1.06rem}
+details p{margin:10px 0 0;color:var(--muted);max-width:64ch}
+.steps li{position:relative}.ic{position:absolute;top:20px;right:20px}
+.why-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.why svg.art{width:100%;height:auto;border-radius:26px;box-shadow:0 30px 70px rgba(36,71,224,.28)}
+.ticks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:flex-start;color:var(--muted)}
+.ticks li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:linear-gradient(135deg,#4a78ff,#2447e0) center/60% no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E")}
+.quote cite{display:flex;gap:14px;align-items:center}.av{flex:none;width:52px;height:52px;border-radius:50%}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr}}
+.cta{text-align:center}
+.cta h2{margin:0 auto 26px;max-width:18ch;font-size:clamp(2rem,4.5vw,3rem)}
+footer{background:var(--night1);color:#9fb0e0;padding:36px 0;font-size:.9rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.plans,.quotes{grid-template-columns:1fr}.plan.hot{transform:none}nav a:not(.btn){display:none}.cert{left:12px}.stats{grid-template-columns:1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="dark">
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#"><i></i>Nexora</a>
+      <nav>
+        <a href="#como">Como funciona</a><a href="#planos">Planos</a><a href="#clientes">Clientes</a><a href="#faq">Dúvidas</a>
+        <a class="btn" href="#verificar">Verificar minha marca</a>
+      </nav>
+    </div>
+  </header>
+  <div class="wrap">
+    <div class="hero" id="verificar">
+      <div>
+        <h1>Sua marca é sua. Registre antes que seja de outro.</h1>
+        <p class="lead">A Nexora cuida da pesquisa, do pedido no INPI e do acompanhamento até o certificado. Você só diz o nome.</p>
+        <div class="row"><a class="btn" href="#planos">Ver planos</a><a class="btn ghost" href="#como">Como funciona</a></div>
+      </div>
+      <div class="formwrap">
+        <form class="check glass" id="f">
+          <h2>Seu nome está livre?</h2>
+          <p>Consulta gratuita de viabilidade em segundos.</p>
+          <label for="n">Nome da marca</label>
+          <input id="n" required placeholder="Ex.: Café Aurora" autocomplete="off">
+          <label for="c">Ramo de atividade</label>
+          <select id="c"><option>Alimentos e bebidas</option><option>Moda e vestuário</option><option>Tecnologia e software</option><option>Saúde e beleza</option><option>Serviços e consultoria</option></select>
+          <button class="btn" type="submit">Consultar agora</button>
+          <div id="res" role="status" aria-live="polite"></div>
+        </form>
+        <div class="cert glass" aria-hidden="true">
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#9fe3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M8.5 12l2.5 2.5L16 9.5"/></svg>
+          <div><b>Marca registrada</b>Nº 928 114 337 · Classe 35</div>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat glass"><b>12.400+</b><span>marcas registradas por nossos clientes</span></div>
+      <div class="stat glass"><b>97%</b><span>de pedidos aprovados na primeira análise</span></div>
+      <div class="stat glass"><b>48 h</b><span>para protocolar seu pedido no INPI</span></div>
+    </div>
+  </div>
+</div>
+
+<section class="why">
+  <div class="wrap why-grid">
+    <div>
+      <h2 class="t">Uma marca forte começa protegida</h2>
+      <p class="sub" style="margin-bottom:24px">Seu nome, seu logo e sua reputação valem dinheiro. O registro garante que só você possa usá-los.</p>
+      <ul class="ticks">
+        <li>Exclusividade sobre o nome em todo o Brasil</li>
+        <li>Segurança para abrir franquias e vender a empresa</li>
+        <li>Base legal para tirar do ar quem copiar você</li>
+      </ul>
+    </div>
+    <svg class="art" viewBox="0 0 480 380" role="img" aria-label="Ilustração de uma loja com selo de marca registrada">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1c68"/><stop offset="1" stop-color="#2f5bff"/></linearGradient>
+        <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4f7ff"/><stop offset="1" stop-color="#cfdcff"/></linearGradient>
+        <linearGradient id="shd" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb2ff"/><stop offset="1" stop-color="#2447e0"/></linearGradient>
+      </defs>
+      <rect width="480" height="380" fill="url(#sky)"/>
+      <circle cx="390" cy="80" r="90" fill="#6fb4ff" opacity=".35"/><circle cx="70" cy="310" r="110" fill="#35c1ff" opacity=".25"/>
+      <rect x="70" y="110" width="340" height="220" rx="10" fill="url(#wall)"/>
+      <rect x="60" y="100" width="360" height="48" rx="8" fill="#0b1740"/>
+      <text x="240" y="133" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="700" font-size="26" fill="#fff">Café Aurora</text>
+      <g><path d="M60 150h360l-14 46H74z" fill="#fff"/>
+      <path d="M60 150h45l-8 46H74zM150 150h45l-4 46h-45zM240 150h45l4 46h-45zM330 150h45l8 46h-45z" fill="url(#shd)"/></g>
+      <rect x="100" y="220" width="120" height="90" rx="8" fill="#9db5ff" opacity=".55"/>
+      <rect x="100" y="220" width="120" height="90" rx="8" fill="none" stroke="#fff" stroke-width="4"/>
+      <path d="M118 296c14-34 30-34 44 0z" fill="#fff" opacity=".5"/>
+      <rect x="270" y="214" width="90" height="116" rx="8" fill="#0f2a9c"/><circle cx="346" cy="274" r="5" fill="#fff"/>
+      <rect x="40" y="326" width="400" height="14" rx="7" fill="#06103a" opacity=".6"/>
+      <g transform="translate(330 40)"><path d="M52 0l52 18v40c0 32-22 52-52 60C22 110 0 90 0 58V18z" fill="#ffffff2e" stroke="#fff" stroke-opacity=".7" stroke-width="2"/>
+      <path d="M30 58l16 16 30-32" fill="none" stroke="#9fe3b8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <g transform="translate(48 52)"><rect width="92" height="52" rx="14" fill="#ffffff2e" stroke="#fff" stroke-opacity=".6"/><text x="46" y="36" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="700" font-size="30" fill="#fff">®</text></g>
+    </svg>
+  </div>
+</section>
+
+<section id="como" class="soft">
+  <div class="wrap">
+    <h2 class="t">Do nome ao certificado em quatro etapas</h2>
+    <p class="sub">Você acompanha tudo pelo painel da Nexora, sem burocracia e sem juridiquês.</p>
+    <ol class="steps">
+      <li><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2447e0" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg><h3>Busca prévia</h3><p>Analisamos marcas parecidas e apontamos os riscos antes de você gastar com o pedido.</p></li>
+      <li><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2447e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><h3>Pedido no INPI</h3><p>Preparamos e protocolamos o pedido na classe certa para o seu negócio.</p></li>
+      <li><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2447e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><h3>Acompanhamento</h3><p>Monitoramos a Revista da Propriedade Industrial e respondemos a qualquer exigência.</p></li>
+      <li><svg class="ic" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2447e0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><h3>Certificado</h3><p>Com a concessão, você tem exclusividade sobre a marca por 10 anos.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="planos" class="dark">
+  <div class="orb o2" style="top:-60px;left:auto;right:-60px;bottom:auto"></div>
+  <div class="wrap">
+    <h2 class="t">Planos claros, sem taxa escondida</h2>
+    <p class="sub" style="color:#c9d6ff">Valores de serviço da Nexora. As taxas do INPI são cobradas à parte, no valor oficial.</p>
+    <div class="plans">
+      <div class="plan glass"><h3>Essencial</h3><div class="price">R$ 490 <small>por classe</small></div>
+        <ul><li>Busca prévia de viabilidade</li><li>Pedido de registro no INPI</li><li>Painel de acompanhamento</li></ul><a class="btn ghost" href="#verificar">Começar</a></div>
+      <div class="plan glass hot"><h3>Completo<span class="tag">Mais escolhido</span></h3><div class="price">R$ 890 <small>por classe</small></div>
+        <ul><li>Tudo do Essencial</li><li>Resposta a exigências e oposições</li><li>Monitoramento semanal da RPI</li><li>Suporte por WhatsApp</li></ul><a class="btn" href="#verificar">Escolher o Completo</a></div>
+      <div class="plan glass"><h3>Empresa</h3><div class="price">R$ 2.400 <small>até 5 classes</small></div>
+        <ul><li>Tudo do Completo</li><li>Estratégia de portfólio de marcas</li><li>Notificação contra uso indevido</li></ul><a class="btn ghost" href="#verificar">Falar com especialista</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="clientes" class="soft">
+  <div class="wrap">
+    <h2 class="t">Quem registrou, recomenda</h2>
+    <p class="sub">Histórias de negócios que dormem tranquilos com a marca protegida.</p>
+    <div class="quotes">
+      <div class="quote"><p>Em dois dias o pedido estava no INPI. Quando apareceu uma oposição, a Nexora resolveu sem eu precisar entender nada de lei.</p><cite><svg class="av" viewBox="0 0 52 52"><defs><linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7fb2ff"/><stop offset="1" stop-color="#2447e0"/></linearGradient></defs><rect width="52" height="52" fill="url(#a1)"/><path d="M8 52c2-14 10-18 18-18s16 4 18 18z" fill="#0b1740"/><circle cx="26" cy="22" r="9" fill="#f1c9a5"/><path d="M16 22c-2-12 18-16 20-2-6-2-12-6-20 2z" fill="#3a2418"/><path d="M17 20c0 12-2 16-4 18M35 20c0 12 2 16 4 18" stroke="#3a2418" stroke-width="5" stroke-linecap="round"/></svg><span><b>Marina Duarte</b>Fundadora, Café Aurora</span></cite></div>
+      <div class="quote"><p>Descobriram na busca prévia que meu nome ia dar conflito. Mudei antes de investir em embalagem. Valeu cada centavo.</p><cite><svg class="av" viewBox="0 0 52 52"><defs><linearGradient id="a2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#35c1ff"/><stop offset="1" stop-color="#0f2a9c"/></linearGradient></defs><rect width="52" height="52" fill="url(#a2)"/><path d="M8 52c2-14 10-18 18-18s16 4 18 18z" fill="#fff"/><circle cx="26" cy="22" r="9" fill="#c68a62"/><path d="M17 20c0-9 18-9 18 0-5-3-13-3-18 0z" fill="#1a1210"/></svg><span><b>Rafael Tomaz</b>CEO, Vitta Fit</span></cite></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <h2 class="t">Dúvidas comuns</h2>
+    <details><summary>Quanto tempo leva para registrar uma marca?</summary><p>O pedido é protocolado em até 48 horas. A análise do INPI costuma levar de 12 a 24 meses, e você já tem proteção em andamento desde o protocolo.</p></details>
+    <details><summary>Registrar o CNPJ já protege o nome?</summary><p>Não. O CNPJ só garante o nome empresarial. O direito exclusivo sobre a marca vem do registro no INPI.</p></details>
+    <details><summary>E se o pedido for negado?</summary><p>Nos planos Completo e Empresa, entramos com o recurso sem custo de serviço adicional.</p></details>
+    <details><summary>Preciso registrar uma classe por produto?</summary><p>O registro vale por classe de atividade. Indicamos só as classes que protegem o seu negócio.</p></details>
+  </div>
+</section>
+
+<section class="dark cta">
+  <div class="wrap"><h2>Proteja o nome que você construiu.</h2><a class="btn" href="#verificar">Consultar minha marca</a></div>
+</section>
+
+<footer><div class="wrap"><span>© 2026 Nexora Propriedade Intelectual Ltda. Site de demonstração.</span><span>contato@nexora.com.br · (11) 4000-0000</span></div></footer>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('n').value.trim(),c=document.getElementById('c').value,r=document.getElementById('res'),seed=0;
+  for(var i=0;i<n.length;i++)seed+=n.charCodeAt(i);
+  r.style.display='block';r.textContent='';
+  var s=document.createElement('strong'),t=document.createElement('span');
+  if(seed%3===0){s.textContent='Atenção: ';t.textContent='encontramos 2 marcas parecidas com “'+n+'” em '+c+'. Fale com um especialista para avaliar o risco.'}
+  else{s.textContent='Boa notícia: ';s.style.color='#9fe3b8';t.textContent='não vimos marca idêntica a “'+n+'” em '+c+'. Vale registrar antes que alguém o faça.'}
+  r.appendChild(s);r.appendChild(t);
+});
+</script>
+</body>
+</html>
